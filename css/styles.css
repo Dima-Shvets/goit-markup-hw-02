@@ -1,0 +1,86 @@
+/* accent color #2196F3  */
+/* headings color #212121 */
+/* main text color #757575 */
+/* secondary background color #F5F4FA */
+/* primary background color #FFFFFF */
+/* logo font Raleway  700
+Oleo Script 400 */
+/* main font Roboto */
+/* font weight 400, 500, 700, 900 */
+:root {
+    --background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --main-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* Logo */
+.logo {
+    color: #000000;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+/* site navigation */
+.navigation .link {
+    color:var(--secondary-text-color);
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+    color:var(--accent-color);
+}
+
+.contacts .item {
+    color: var(--main-text-color);
+}
+
+.contacts .item:hover,
+.contacts .item:focus {
+    color: var(--accent-color);
+}
+
+.hero-title {
+    color: var(--secondary-text-color);
+}
+
+.hero-button {
+    color: var(--background-color);
+    background-color: var(--accent-color); 
+}
+
+.values-title {
+    color: var(--secondary-text-color);
+}
+
+.section-title {
+   color: var(--secondary-text-color) 
+}
+
+.team-title {
+    color: var(--secondary-text-color);
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-link {
+    color: var(--main-text-color);
+}
+
+.footer-address {
+    color: var(--background-color);
+}
