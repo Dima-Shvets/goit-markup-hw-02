@@ -16,6 +16,9 @@ font-family: 'Roboto', sans-serif; */
     --main-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
+    --footer-color: #2F303A;
+    --filter-button-color: #F5F4FA;
+    --button-accent-color: #188CE8;
     --main-font: "Roboto", sans-serif;
     --logo-font: "Raleway", sans-serif;
 }
@@ -69,6 +72,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+.navigation-list-link.current {
+    color: var(--accent-color);
+}
+
 .navigation-list-link:hover,
 .navigation-list-link:focus {
     color: var(--accent-color);
@@ -91,8 +98,12 @@ body {
 
 /* ============= HERO ============= */
 
+.hero {
+    background-color: var(--footer-color);
+}
+
 .hero-title {
-    color: var(--secondary-text-color);
+    color: var(--background-color);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -101,8 +112,8 @@ body {
 }
 
 .hero-button {
-    color: #FFFFFF;
-    font-family: Roboto;
+    font-family: var(--main-font);
+    color: var(--background-color);
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
@@ -114,7 +125,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #188CE8; 
+    background-color: var(--button-accent-color); 
 }
 
 /* ============= END HERO ============= */
@@ -152,6 +163,9 @@ body {
 }
 
 .team-list-item-text {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -160,8 +174,9 @@ body {
 /* ============= PORTFOLIO ============= */
 
 .filter-button {
+    font-family: var(--main-font);
     color: var(--secondary-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--filter-button-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
@@ -172,7 +187,7 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
-    color: #FFFFFF;
+    color: var(--background-color);
     background-color: var(--accent-color);
 }
 
@@ -194,12 +209,16 @@ body {
 /* ============= FOOTER ============= */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--footer-color);
+}
+
+.footer .logo {
+    color:var(--background-color)
 }
 
 .contact-information-list-link {
     color: var(--main-text-color);
-    font-family: Roboto;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
